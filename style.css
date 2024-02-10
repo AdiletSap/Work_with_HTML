@@ -1,0 +1,704 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.header_setting {
+    min-height: 768px;
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+
+.header_logo_contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 42px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.animation_header_logo:hover {
+    -webkit-animation: rotate-scale-up 0.65s linear both;
+    animation: rotate-scale-up 0.65s linear both;
+}
+
+@-webkit-keyframes rotate-scale-up {
+    0% {
+        -webkit-transform: scale(1) rotateZ(0);
+        transform: scale(1) rotateZ(0);
+    }
+
+    50% {
+        -webkit-transform: scale(2) rotateZ(180deg);
+        transform: scale(2) rotateZ(180deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotateZ(360deg);
+        transform: scale(1) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-scale-up {
+    0% {
+        -webkit-transform: scale(1) rotateZ(0);
+        transform: scale(1) rotateZ(0);
+    }
+
+    50% {
+        -webkit-transform: scale(2) rotateZ(180deg);
+        transform: scale(2) rotateZ(180deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotateZ(360deg);
+        transform: scale(1) rotateZ(360deg);
+    }
+}
+
+.animation_header_contacts:hover {
+    -webkit-animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes rotate-90-cw {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes rotate-90-cw {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.all_header {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header_info {
+    padding-top: 115px;
+    flex-grow: 1;
+    background-image: url(img/illustration.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 50%;
+}
+
+.header_title {
+    font-size: 64px;
+    font-weight: 300;
+    color: #1F3F68;
+    width: 510px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+    transition: 360ms;
+}
+
+.header_title:hover {
+    color: rgb(107, 93, 252);
+    font-size: 66px;
+}
+
+.p_text {
+    line-height: 26px;
+    color: #1F3F68;
+    opacity: 0.6;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    transition: 360ms;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.p_text:hover {
+    color: #030152;
+    font-size: 16.3px;
+}
+
+.header_text {
+    width: 425px;
+}
+
+.header_button {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 15px 50px;
+    margin-top: 71px;
+    transition: 0.4s;
+}
+
+.header_button:hover {
+    color: #5A98D0;
+    background-color: #fff;
+    border: 2px solid rgb(9, 168, 15);
+    transform: scale(1.15);
+}
+
+.all_what_we_do {
+    padding-top: 64px;
+
+}
+
+.title_what_we_do {
+    font-family: 'Roboto';
+    font-style: normal;
+    text-align: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.title_h2 {
+    justify-content: center;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    transition: 460ms;
+}
+
+h2:hover {
+    color: #25374d;
+    font-size: 38px;
+}
+
+.blocks_main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.subblocks_main {
+    width: 359px;
+    padding: 44px 32px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.subblocks_main:hover {
+    transform: scale(1.08);
+}
+
+.blocks_main_img {
+    align-self: center;
+    margin-bottom: 51px;
+}
+
+.blocks_main_title_animation {
+    transition: 360ms;
+}
+
+.blocks_main_title_animation:hover {
+    font-size: 20.3px;
+    color: #01013b;
+}
+
+.blocks_main_title {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    margin-bottom: 14px;
+}
+
+.blocks_main_link_all {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.blocks_main_link {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.blocks_main_link:hover {
+    color: #ea04ff;
+    font-size: 14.5px;
+}
+
+.title_Our_Finished_Project_text {
+    width: 75%;
+    margin: 32px auto 64px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #222222;
+    text-align: center;
+}
+
+.position_Our_Finished_Project {
+    position: relative;
+    flex-grow: 1;
+}
+
+.S_H_I:hover {
+    -webkit-animation: slide-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+    animation: slide-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+}
+
+@-webkit-keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+}
+
+.Smart_Home_Installation_title {
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 64px;
+    right: 64px;
+}
+
+.Sparklite_App_title {
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 64px;
+    left: 64px;
+}
+
+.Car_Rapetition_App_title {
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 64px;
+    left: 64px;
+}
+
+.position_Our_Finished_Project_2_margin {
+    margin-right: 32px;
+}
+
+.Our_Finished_Project_img_blocks_2_and_3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 112px;
+}
+
+.animation_Our_Finished_Project_2_3:hover {
+    -webkit-animation: slide-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+    animation: slide-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+}
+
+@-webkit-keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+    }
+}
+
+@keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+    }
+}
+
+
+.Our_Finished_Project_img {
+    width: 100%;
+}
+
+.footer {
+    padding-top: 91px;
+    padding-bottom: 64px;
+    margin-top: 112px;
+    background: #316099;
+}
+
+.footer_Intersted_to_woek_with_our_team {
+    padding-bottom: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_Intersted_to_woek_with_our_team_title_text {
+    width: 495px;
+}
+
+.footer_Intersted_to_woek_with_our_team_title {
+    text-align: left;
+    width: 340px;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    padding-bottom: 32px;
+}
+
+.footer_Intersted_to_woek_with_our_team_text {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.footer_Intersted_to_woek_with_our_team_button {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    padding: 15px 80px;
+    background: #5A98D0;
+    transition: 0.4s;
+}
+
+.footer__button:hover {
+    background-color: rgb(0, 162, 255);
+}
+
+.footer_Intersted_to_woek_with_our_team_button:hover {
+    color: #5A98D0;
+    background-color: #FFFFFF;
+    border: 2px solid rgb(9, 168, 15);
+    transform: scale(1.15);
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.animation_footer_li {
+    transition: 360ms;
+}
+
+.animation_footer_li:hover {
+    color: #222222;
+}
+
+.footer_center_line {
+    opacity: 0.4;
+}
+
+.contacts_tel_email {
+    text-decoration: none;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    transition: 360ms;
+}
+
+.contacts_tel_email:hover {
+    border-radius: 15%;
+    border: 3px solid rgb(48, 230, 7);
+    background-color: #FFFFFF;
+}
+
+.animation_footer_li_2_3 {
+    transition: 360ms;
+}
+
+.animation_footer_li_2_3:hover {
+    color: rgb(48, 230, 7);
+}
+
+.footer_end {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 64px;
+}
+
+.footer_All_rights_reserved {
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 0.4;
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 1024px) {
+    .header_info {
+        background-position: right 150px;
+    }
+
+    .blocks_main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .subblocks_main {
+        margin-bottom: 32px;
+    }
+
+    .footer_Intersted_to_woek_with_our_team {
+        padding-top: 47px;
+        padding-left: 124px;
+    }
+
+    .footer {
+        padding-top: 0;
+    }
+
+    .footer_Intersted_to_woek_with_our_team_title_text {
+        width: 336px;
+    }
+
+    .footer_Intersted_to_woek_with_our_team_button {
+        padding: 3px 25px;
+        font-size: 16px;
+        line-height: 26px;
+        margin-right: 85px;
+        margin-top: 68px;
+    }
+
+    .footer_end {
+        padding-left: 124px;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        margin-left: 124px;
+        padding: 0;
+        margin-top: 64px;
+    }
+}
+
+@media (max-width:667px) {
+    .header {
+        min-height: 376px;
+        padding-bottom: 41px;
+        box-sizing: border-box;
+    }
+
+    .header_logo_contact {
+        padding-top: 24px;
+    }
+
+    .header_info {
+        padding-top: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+    }
+
+    .header_title {
+        text-align: center;
+        width: 100%;
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 12px;
+    }
+
+    .header_text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header_button {
+        font-size: 12px;
+        line-height: 26px;
+        padding: 0 8px;
+    }
+
+    .title_h2 {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .what-we-do {
+        padding-top: 48px;
+    }
+
+    .blocks_main {
+        padding-top: 32px;
+    }
+
+    .subblocks_main {
+        width: 100%;
+    }
+
+    .title_Our_Finished_Project_text {
+        width: 100%;
+    }
+
+    .Smart_Home_Installation_title {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .Sparklite_App_title {
+        left: 16px;
+    }
+
+    .Our_Finished_Project_img_blocks_2_and_3 {
+        flex-direction: column;
+        margin-top: 16px;
+    }
+
+    .position_Our_Finished_Project_2_margin {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .Sparklite_App_title {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+    }
+
+    .Car_Rapetition_App_title {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        left: 16px;
+    }
+
+    .footer_Intersted_to_woek_with_our_team {
+        padding-top: 18px;
+        padding-right: 16px;
+        padding-left: 16px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .footer_Intersted_to_woek_with_our_team_text {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        opacity: 0.6;
+        text-align: center;
+    }
+
+    .footer_Intersted_to_woek_with_our_team_button {
+        padding: 3px 25px;
+        font-size: 16px;
+        line-height: 26px;
+        margin-right: 0px;
+        margin-top: 40px;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        margin-top: 32px;
+        margin: 32px 0 37px;
+    }
+
+    .footer_end {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .footer_All_rights_reserved {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        opacity: 0.4;
+    }
+}
